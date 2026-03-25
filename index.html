@@ -203,10 +203,12 @@ choisis pour les joueurs francophones.
 
 <!-- FORMULAIRE -->
 
-<div class="input-group">
-<input type="email" placeholder="Votre adresse email">
-<button>S’inscrire</button>
-</div>
+<form action="https://sendy.harg.be/subscribe" class="input-group" method="POST" accept-charset="utf-8">
+	<input type="email" name="email" id="email" placeholder="Votre adresse email"/>
+	<input type="hidden" name="list" value="wJhiDULg3dQ1VVwXhtRe4g"/>
+	<input type="hidden" name="subform" value="yes"/>
+    <button>S’inscrire</button>
+</form>
 
 <p class="note">
 Pas de spam. Uniquement des jeux sélectionnés et intéressants.
