@@ -24,26 +24,12 @@ color:#1a1a1a;
 line-height:1.6;
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-text-align:center;
-}
-
-.hero{
-background:linear-gradient(135deg,#4f46e5,#6366f1);
-color:white;
-padding:0px 20px;
-}
-
-.hero p{
-color:#e0e7ff;
-}
-
 h1{
-font-size:42px;
+font-size:64px;
 margin-bottom:20px;
+font-family: 'Anton', sans-serif;
+-webkit-text-stroke: 2px black;
+text-shadow: 0 0 2px black;
 }
 
 h2{
@@ -52,16 +38,41 @@ margin-bottom:20px;
 }
 
 p{
-margin-bottom:20px;
 color:#444;
 }
 
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+text-align:center;
+}
+
+.container p{
+background: #fcfaf8b5;
+padding: 5px;
+border-radius: 8px;
+}
+
+.hero{
+background:linear-gradient(135deg,#4f46e5,#6366f1);
+color:white;
+padding:0px 20px;
+position: relative;
+background-image: url('https://static.harg.be/Service/HARGBackground.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-blend-mode: color;
+}
+
 .hero p{
-color:#e0e7ff;
+color:black;
+font-size:16px;
+background: #ffd19db5;
 }
 
 .input-group{
-margin-top:30px;
+margin:30px auto;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
@@ -80,25 +91,19 @@ button{
 padding:14px 24px;
 border:none;
 border-radius:8px;
-background:#111827;
+background:rgb(158, 64, 16);
 color:white;
 font-weight:600;
 cursor:pointer;
 }
 
 button:hover{
-background:#000;
-}
-
-.note{
-margin-top:10px;
-font-size:14px;
-color:#9ca3af;
+background:rgb(99, 40, 11);
 }
 
 .features{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(325px,1fr));
 gap:30px;
 margin-top:40px;
 }
@@ -123,7 +128,7 @@ margin-bottom:15px;
 }
 
 .footer{
-background:#111827;
+background:rgb(255, 125, 50);
 color:white;
 text-align:center;
 padding:30px;
@@ -137,15 +142,12 @@ padding:30px;
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" style="background-position: top;">
 
 <div class="container">
 
-<h1>Un canal entre joueurs et développeurs</h1>
+<h1>Haaaaarg, le cri des développeurs</h1>
 
-<p>
-Nous aidons les joueurs à trouver des pépites qu’ils n’auraient jamais vues autrement.
-</p>
 <p>
 Si vous aimez découvrir de nouveaux jeux, vous êtes au bon endroit.
 </p>
@@ -191,7 +193,7 @@ PS : c'est gratuit. <span class="small-text">(Soutenus par les studios qui veule
 
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" style="background-position: bottom;">
 
 <div class="container">
 
@@ -212,7 +214,7 @@ choisis pour les joueurs francophones.
     <button>S’inscrire</button>
 </form>
 
-<p class="note">
+<p>
 Pas de spam. Uniquement des jeux sélectionnés et intéressants.
 </p>
 
