@@ -1,0 +1,5 @@
+ErrorDocument 500 ":( server crashed."
+ErrorDocument 404 "404 Not Found: The file you are trying to view does not exist."
+ErrorDocument 403 "403 Forbidden: You don't have permission to access this resource."
+
+Options -Indexes
